@@ -82,7 +82,7 @@ input[type="color"]{
 
 input[type="tel"],
 input[type=file]{
-  margin-bot: 0;
+  margin-bottom: 0;
 }
 
 small{
