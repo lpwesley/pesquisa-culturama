@@ -1,136 +1,225 @@
-*{
+/* ===================================
+   RESET
+=================================== */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background-color: #F9F9F9;
+/* ===================================
+   ESTILO GERAL
+=================================== */
+
+body {
+  background-color: #f9f9f9;
   font-family: "Work Sans", sans-serif;
 }
 
-main{
+main {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
 }
 
-header{
+header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-img{
+img {
   width: 100px;
+  max-width: 100%;
+  height: auto;
 }
 
-h1{
+h1 {
   font-family: "Fjalla One", sans-serif;
 }
 
-form{
-  background-color: #FFF;
+/* ===================================
+   FORMULÁRIO
+=================================== */
+
+form {
+  background-color: #fff;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 100px;
 }
 
-fieldset{
+fieldset {
+  min-width: 0;
   padding: 15px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 15px;
 }
 
-legend{
+legend {
   font-weight: bold;
   font-size: 18px;
   padding: 0 5px;
 }
 
-label{
+label {
   display: inline-block;
   margin-bottom: 5px;
 }
 
-p{
+p {
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-input, select, textarea{
+/* ===================================
+   CAMPOS
+=================================== */
+
+input,
+select,
+textarea {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
 }
 
-textarea{
+textarea {
   min-height: 100px;
+  resize: vertical;
+}
+
+/* ===================================
+   CAMPOS ESPECÍFICOS
+=================================== */
+
+input[type="date"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 42px;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    width: auto;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 0;
 }
 
-input[type="color"]{
+input[type="color"] {
+  display: inline-block;
   width: 40px;
   padding: 0 5px;
 }
 
 input[type="tel"],
-input[type=file]{
+input[type="file"] {
   margin-bottom: 0;
 }
 
-small{
+small {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-input:focus{
+/* ===================================
+   VALIDAÇÕES
+=================================== */
+
+input:focus {
   border-color: cornflowerblue;
   outline: none;
 }
 
-input:invalid, select:invalid, textarea:invalid{
+input:invalid,
+select:invalid,
+textarea:invalid {
   border-color: red;
 }
 
-input:valid, select:valid, textarea:valid{
+input:valid,
+select:valid,
+textarea:valid {
   border-color: green;
 }
 
-button{
+/* ===================================
+   BOTÕES
+=================================== */
+
+button {
   width: 100px;
   height: 30px;
   margin-right: 10px;
-  background-color: #FFF;
-  border: 1px solid #CCC;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
   cursor: pointer;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
   background-color: green;
-  color: #FFF;
+  color: #fff;
 }
 
-button[type="reset"]:hover{
+button[type="reset"]:hover {
   background-color: orangered;
-  color: #FFF;
+  color: #fff;
 }
 
-.sucess{
+/* ===================================
+   PÁGINA DE SUCESSO
+=================================== */
+
+.sucess {
   margin: 100px auto;
   border: 2px solid green;
   border-radius: 10px;
   text-align: center;
 }
 
-.congratulations{
+.congratulations {
   font-family: "Fjalla One", sans-serif;
   padding: 100px;
+}
+
+/* ===================================
+   RESPONSIVIDADE - MOBILE
+=================================== */
+
+@media (max-width: 440px) {
+  main {
+    width: 100%;
+  }
+
+  form {
+    padding: 12px;
+  }
+
+  fieldset {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .congratulations {
+    padding: 40px 15px;
+  }
 }
