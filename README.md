@@ -1,65 +1,55 @@
-
 # Pesquisa Culturama
 
-Formulário de pesquisa de opinião desenvolvido durante meus estudos de **Desenvolvimento Front-end na Alura**, com foco na construção de formulários HTML, estilização com CSS e aplicação de boas práticas de desenvolvimento web.
+![Projeto guiado](https://img.shields.io/badge/🎓_Projeto-Guiado_(Alura)-9cf?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-O projeto explora diferentes elementos de formulários, validação nativa dos campos, semântica HTML, acessibilidade e responsividade.
+> **🎓 Projeto guiado:** desenvolvido acompanhando as aulas da formação de **Front-end da [Alura](https://www.alura.com.br/)**. O layout e a proposta são do curso; a implementação foi feita por mim, seguindo o professor.
 
-## 📸 Prévia do projeto
+Formulário de pesquisa de opinião construído com HTML5 e CSS3, explorando os principais elementos de formulário, validação nativa do navegador, semântica, acessibilidade e responsividade.
+
+🔗 **[Ver projeto online](https://lpwesley.github.io/pesquisa-culturama/)**
+
+## 📸 Prévia
 
 ![Prévia do formulário Pesquisa Culturama](./img/preview.png)
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias
 
-- **HTML5:** estruturação semântica e criação de formulários.
-- **CSS3:** estilização, organização visual e responsividade.
-- **Git:** controle de versão durante o desenvolvimento.
-- **GitHub:** hospedagem do código e publicação do projeto.
+- **HTML5:** estrutura semântica e formulários
+- **CSS3:** estilização e layout responsivo
+- **Git e GitHub:** versionamento e publicação
 
 ## ⚙️ Funcionalidades
 
-O formulário utiliza recursos nativos do HTML5, incluindo:
+- Campos de dados pessoais, e-mail, telefone e data
+- Alternativas com `radio` e `checkbox`, listas com `select`
+- Upload de arquivo e campo de comentários
+- Validação nativa com `required`, `pattern`, `min` e `max`
+- Campos agrupados com `fieldset` e `legend`, rótulos ligados com `label` e `for`
+- Página de confirmação após o envio
+- Layout adaptado a diferentes tamanhos de tela
 
-- Campos para preenchimento de dados pessoais.
-- Seleção de alternativas com `radio` e `checkbox`.
-- Listas de seleção utilizando `select`.
-- Campos específicos para e-mail, data e telefone.
-- Upload de arquivos.
-- Campos para opiniões e comentários.
-- Validação nativa com `required`, `pattern`, `min` e `max`.
-- Organização de campos com `fieldset` e `legend`.
-- Associação de rótulos aos campos utilizando `label`.
-- Página de confirmação após o envio.
-- Layout adaptado para diferentes tamanhos de tela.
+> O formulário não envia dados para um servidor: o foco do projeto é a construção e a validação no front-end.
 
-## 📚 Aprendizados
+## 📚 O que pratiquei
 
-Durante o desenvolvimento, pude aplicar conceitos fundamentais para minha evolução como desenvolvedor Front-end.
+**HTML e formulários**
+- Diferentes tipos de `input` e quando usar cada um
+- Organização e acessibilidade de formulários com `fieldset`, `legend` e `label`
+- Validação nativa do navegador
 
-### HTML e formulários
+**CSS e responsividade**
+- Estilização dos elementos de formulário
+- Espaçamentos, alinhamentos e organização dos arquivos CSS
+- Adaptação do layout para diferentes resoluções
 
-- Estruturação semântica de páginas web.
-- Utilização de diferentes tipos de `input`.
-- Organização de formulários com `fieldset` e `legend`.
-- Associação entre campos e rótulos com `label` e `for`.
-- Aplicação de validações nativas do navegador.
+**Acessibilidade e boas práticas**
+- Uso de elementos semânticos e identificação clara dos campos
+- Atributos ARIA onde necessário
+- Código organizado e versionado com Git
 
-### CSS e responsividade
-
-- Estilização dos elementos do formulário.
-- Organização das regras e arquivos CSS.
-- Aplicação de espaçamentos e alinhamentos.
-- Adaptação do layout para diferentes resoluções.
-
-### Acessibilidade e boas práticas
-
-- Utilização de elementos semânticos.
-- Identificação adequada dos campos.
-- Aplicação de atributos ARIA quando necessários.
-- Organização do código para facilitar a manutenção.
-- Versionamento do projeto com Git e GitHub.
-
-## 📂 Estrutura do projeto
+## 📂 Estrutura
 
 ```text
 pesquisa-culturama/
@@ -68,47 +58,26 @@ pesquisa-culturama/
 │   ├── logo-culturama.png
 │   └── preview.png
 ├── nav/
-├── index.html
 ├── culturama-favico.png
+├── index.html
 └── README.md
 ```
 
-## 💻 Como executar localmente
+## 💻 Como executar
 
-O projeto pode ser executado diretamente no navegador, sem necessidade de instalar dependências.
-
-**1. Clone o repositório:**
+Não há dependências. Basta clonar e abrir no navegador:
 
 ```bash
 git clone https://github.com/lpwesley/pesquisa-culturama.git
-```
-
-**2. Acesse a pasta:**
-
-```bash
 cd pesquisa-culturama
 ```
 
-**3. Abra o projeto:**
-
-Abra o arquivo `index.html` no navegador ou utilize a extensão **Live Server** no Visual Studio Code.
-
-## 📝 Observações
-
-Este projeto foi desenvolvido exclusivamente para fins educacionais.
-
-O formulário utiliza recursos nativos do HTML5 para validação dos campos e apresenta uma página de confirmação após o envio.
-
-Não possui integração com banco de dados ou serviço de armazenamento de respostas.
+Abra o `index.html` no navegador ou use a extensão **Live Server** no VS Code.
 
 ## 🎓 Créditos
 
-Projeto desenvolvido como parte dos estudos na plataforma **[Alura](https://www.alura.com.br/)**.
-
-A implementação e os ajustes realizados durante o desenvolvimento fazem parte da minha jornada de aprendizado em programação.
+Projeto proposto pela **[Alura](https://www.alura.com.br/)** como parte da formação em Front-end. O design e o conteúdo base pertencem ao curso.
 
 ---
 
-Desenvolvido por **Wesley Lauwer**.
-
-[GitHub](https://github.com/lpwesley)
+Desenvolvido por **Wesley Lauwer** · [GitHub](https://github.com/lpwesley)
